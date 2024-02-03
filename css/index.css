@@ -1,0 +1,98 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #863a2c, #7d8082, #6a300b);
+}
+
+header {
+    position: fixed;
+    background: linear-gradient(to right, #5f291f, #7d8082, #3f1c06);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 7px solid black;
+}
+
+section {
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: 100vh;
+    display: flex;
+    flex-direction: inline;
+}
+
+/*css header*/
+#nav_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+#div_my_name_header {
+    flex: 1;
+    font-size: 30px;
+    text-align: initial;
+}
+
+.div_nav_links {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    font-size: 24px;
+    padding: 15px 20px;
+}
+
+.div_nav_links a {
+    text-decoration: none;
+    color: black;
+}
+
+.div_nav_links a:hover {
+    color: white;
+    transform: scale(1.3);
+}
+
+/*css section About_me*/
+#section_about_me {
+    text-align: center;
+}
+
+/*css section about_me nav_first_column*/
+#nav_about_me_first_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+#nav_about_me_first_column h1 {
+    font-size: 50px;
+    text-align: start;
+}
+
+/*css section about_me nav_second_column*/
+#nav_about_me_second_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+section img {
+    height: 70%;
+    width: 70%;
+    /*so it can't pass the max width*/
+}
+
+/*css section projects*/
+#section_projects {}
