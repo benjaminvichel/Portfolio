@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to right, #863a2c, #7d8082, #6a300b);
+    scroll-behavior: smooth;
 }
 
 header {
