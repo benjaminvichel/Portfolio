@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="/css/index.css">
 </head>
 
-<body id="home">
+<body>
     <header>
         <nav id="nav_header">
-            <div id="div_my_name_header">
+            <div id="my_name_div_header">
                 <h1>Benjamin Vichel</h1>
             </div>
-            <div class="div_nav_links">
+            <div class="links_div_nav_header">
                 <a href="#home">Home</a>
                 <a href="#about_me">About Me</a>
                 <a href="#projects">Projects</a>
@@ -23,19 +23,54 @@
         </nav>
     </header>
 
-    <!--section About_Me-->
-    <section id="section_about_me">
-        <nav id="nav_about_me_first_column">
+    <!--section home-->
+    <section id="home" class="section_home">
+        <div id="nav_home_first_column">
             <h1>Hi!<br> I'm <span style="color: brown;">Benjamin Vichel</span><br>Front End Developer</h1>
-        </nav>
-        <nav id="nav_about_me_second_column">
+        </div>
+        <div id="nav_home_second_column">
 
             <img src="/img/cube_world_character.jpg" alt="cube world character">
-        </nav>
+        </div>
     </section>
-    <section id="section_projects">
-        <p id="projects">outra coisa</p>
+
+
+
+    <!--section about_me-->
+    <section id="about_me">
+        <div id="nav_about_me_first_column">
+            <h1>About Me</h1>
+            <p>I'm a student, studying computer science and currently in the 5th semester.</p>
+            <p> Looking for
+                my first opportunity in the field of programming. </p>
+        </div>
+        <div id="nav_icons_about_me_second_column">
+            <div class="div_icons_about_me">
+                <img src="/img/html 100x100.png" alt="icon HTML"
+                    onclick="showText('I am a student, currently studying computer science.'
+                +' Looking for opportunities in the field of programming. I am an autodidact person, quick learner and have knowledge in object orientation')">
+                <img src="/img/icons8-css-100.png" alt="icon CSS" onclick="showText('css escrita')">
+                <img src="/img/js sem fundo.png" alt="icon Java Script" onclick="showText('js escrita')">
+                <img src="/img/icons8-c-100.png" alt="icon Java Script" onclick="showText('C escrita')">
+                <img src="/img/icon c sharp.png" alt="icon Java Script" onclick="showText('C# escrita')">
+                <img src="/img/icon c++.png" alt="icon Java Script" onclick="showText('C++ escrita')">
+                <img src="/img/icon java.png" alt="icon Java Script" onclick="showText('Java escrita')">
+                <img src="/img/icon mySql.png" alt="icon Java Script" onclick="showText('Java escrita')">
+            </div>
+            <div id="textContainer_second_column_about_me">
+                <p id="displayText" class="hidden_text"></p>
+            </div>
+        </div>
+
+
+
+
+
     </section>
+    <section id="projects" class="section_projects">
+        <p id="projects">Projetos</p>
+    </section>
+    <section id="contact"></section>
 </body>
 <script src="/js/index.js"></script>
 
