@@ -1,9 +1,10 @@
 * {
     scroll-behavior: smooth;
+    scroll-padding-top: 130px;
+    box-sizing: border-box;
 }
 
 body {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     display: flex;
@@ -15,7 +16,7 @@ header {
     position: fixed;
     z-index: 100;
     background: linear-gradient(to right, #5f291f, #7d8082, #3f1c06);
-    box-sizing: border-box;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,9 +26,9 @@ header {
 }
 
 section {
-    box-sizing: border-box;
+
     border: 2px solid black;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: inline;
 }
@@ -41,7 +42,7 @@ section {
     width: 100vw;
 }
 
-#my_name_div_header {
+#myName_div_header {
     flex: 1;
     font-size: 40px;
     text-align: initial;
@@ -67,13 +68,12 @@ section {
     transform: scale(1.3);
 }
 
-/*css section About_me*/
+/*css section Home*/
 #section_home {
     text-align: center;
 }
 
-/*css section about_me nav_first_column*/
-#nav_home_first_column {
+#home_leftColumn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,13 +81,12 @@ section {
     width: 100vw;
 }
 
-#nav_home_first_column h1 {
+#home_leftColumn h1 {
     font-size: 50px;
     text-align: start;
 }
 
-/*css section about_me nav_second_column*/
-#nav_home_second_column {
+#home_rightColumn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,65 +101,77 @@ section img {
     /*so it can't pass the max width*/
 }
 
-/*css section about_me*/
-#nav_about_me_first_column {
-    display: flex;
+/* background: linear-gradient(to right, #89645d, #7b5945); */
+
+
+/*css section AboutMe*/
+
+#aboutMe {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 75%;
-    border: 1px solid black;
 }
 
-#nav_icons_about_me_second_column {
+
+#aboutMe_divTopColumn {
     display: flex;
     flex-direction: column;
-    align-items: top;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#aboutMe_divTopColumn h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    box-sizing: border-box;
+    font-size: 50px;
+    color: brown;
+    margin-bottom: 20px;
+}
+
+#aboutMe_divTopColumn div {
+    display: flex;
+    background: linear-gradient(to right, #89645d, #7b5945);
+    width: 90%;
+    height: 100%;
+    border: 10px solid rgb(73, 16, 16);
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutMe_nav {
+    display: flex;
     justify-content: space-evenly;
     width: 100%;
-    border: 1px solid black;
-}
-
-.div_icons_about_me {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 50%;
 }
 
-.div_icons_about_me img {
-    box-sizing: border-box;
+#aboutMe_nav a {
     display: flex;
-    flex-direction: row;
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    width: 250px;
+    text-decoration: none;
+    color: brown;
 }
 
-.div_icons_about_me img:hover {
-    transform: scale(1.3);
-}
-
-#textContainer_second_column_about_me {
-    box-sizing: border-box;
+#aboutMe_divBottomColumn {
+    display: flex;
+    justify-content: center;
     height: 100%;
+    align-items: center;
+}
+
+#aboutMe_divBottomColumn div {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 10px solid #3f1c06;
     background: linear-gradient(to right, #89645d, #7b5945);
-    margin: 20px;
+    border: 10px solid rgb(73, 16, 16);
+    width: 95%;
+    height: 90%;
+
 }
-
-
-#textContainer_second_column_about_me p {
-    font-size: 50px;
-    color: rgb(26, 7, 7);
-    margin: 10px;
-}
-
-/*css section projects*/
-#section_projects {}
