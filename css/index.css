@@ -158,6 +158,11 @@ section img {
     color: brown;
 }
 
+#aboutMe_nav a:hover {
+    color: black;
+    transform: scale(1.3);
+}
+
 #aboutMe_divBottomColumn {
     display: flex;
     justify-content: center;
@@ -173,5 +178,84 @@ section img {
     border: 10px solid rgb(73, 16, 16);
     width: 95%;
     height: 90%;
+}
 
+
+
+
+/*css section projects*/
+
+
+
+
+#projects {
+    flex-direction: column;
+}
+
+
+#projects_divTopColumn {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#projects_divTopColumn h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    box-sizing: border-box;
+    font-size: 50px;
+    color: brown;
+    margin-bottom: 20px;
+}
+
+#projects_divTopColumn div {
+    display: flex;
+    background: linear-gradient(to right, #89645d, #7b5945);
+    width: 90%;
+    height: 100%;
+    border: 10px solid rgb(73, 16, 16);
+    justify-content: center;
+    align-items: center;
+}
+
+#projects_navIcons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
+#projects_navIcons img {
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    color: brown;
+    margin: 10px;
+}
+
+#projects_navIcons img:hover {
+    color: black;
+    transform: scale(1.2);
+}
+
+#projects_divBottomColumn {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+#projects_divBottomColumn div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #89645d, #7b5945);
+    border: 10px solid rgb(73, 16, 16);
+    width: 95%;
+    height: 90%;
 }
