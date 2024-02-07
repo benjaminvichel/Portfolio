@@ -4,89 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
     <header>
-        <nav id="nav_header">
-            <div id="myName_div_header">
-                <h1>Benjamin Vichel</h1>
-            </div>
-            <div class="links_div_nav_header">
-                <a href="#home">Home</a>
-                <a href="#aboutMe">About Me</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
+        <nav class="header_leftNav">
+            <a href=""><img src="/img/icons8-github-35.png" alt="GitHub"></a>
+            <a href=""><img src="/img/icons8-linkedin-35-removebg-preview.png" alt="Linkedin"></a>
+        </nav>
+        <nav class="header_rightNav">
+            <a href="#home">Home</a>
+            <a href="#aboutMe">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
+    <section id="home">
 
-    <!--section home-->
-    <section id="home" class="section_home">
-        <div id="home_leftColumn">
-            <h1>Hi!<br> I'm <span style="color: brown;">Benjamin Vichel</span><br>Front End Developer</h1>
-        </div>
-        <div id="home_rightColumn">
-
-            <img src="/img/cube_world_character.jpg" alt="cube world character">
-        </div>
     </section>
-
-
-
-    <!--section about_me-->
     <section id="aboutMe">
 
-        <div id="aboutMe_divTopColumn">
-            <h1>About Me</h1>
-            <div>
-                <nav id="aboutMe_nav">
-                    <a href="#" id="certificatesLink" onclick="showMessage('certificate')">Escolaridade</a>
-                    <a href="#" id="otherLink1" onclick="showMessage('outraMensagem1')">Certificados</a>
-                    <a href="#" id="otherLink2" onclick="showMessage('outraMensagem2')">Idiomas</a>
-                </nav>
-            </div>
-        </div>
-        <div id="aboutMe_divBottomColumn">
-            <div id="messageContainer">
-            </div>
-        </div>
     </section>
-
-
-    <section id="projects">
-        <div id="projects_divTopColumn">
-            <h1>Projects</h1>
-            <div>
-                <nav id="projects_navIcons">
-                    <img src="/img/html 100x100.png" alt="icon HTML" onclick="showDiv('display_html_div')">
-                    <img src="/img/icons8-css-100.png" alt="icon CSS" onclick="showDiv('display_css_div')">
-                    <img src="/img/js sem fundo.png" alt="icon Java Script" onclick="showDiv('display_js_div')">
-                    <img src="/img/icons8-c-100.png" alt="icon C language" onclick="showDiv('display_c_div')">
-                    <img src="/img/icon c sharp.png" alt="icon C sharp" onclick="showDiv('display_c_sharp_div')">
-                    <img src="/img/icon c++.png" alt="icon C++" onclick="showDiv('display_cpp_div')">
-                    <img src="/img/icon java.png" alt="icon Java" onclick="showDiv('display_java_div')">
-                    <img src="/img/icon mySql.png" alt="icon MySql" onclick="showDiv('display_mysql_div')">
-                </nav>
-            </div>
-        </div>
-        <div id="projects_divBottomColumn">
-            <div id="messageContainer">
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-    <section id="contact"></section>
 </body>
-<script src="/js/index.js"></script>
 
 </html>

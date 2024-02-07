@@ -1,261 +1,78 @@
 * {
-    scroll-behavior: smooth;
-    scroll-padding-top: 130px;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to right, #863a2c, #7d8082, #6a300b);
+    width: 100vw;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    position: fixed;
-    z-index: 100;
-    background: linear-gradient(to right, #5f291f, #7d8082, #3f1c06);
-
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    border: 7px solid black;
-    height: 140px;
-}
-
-section {
-
-    border: 2px solid black;
-    height: 90vh;
-    display: flex;
-    flex-direction: inline;
-}
-
-/*css header*/
-#nav_header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-}
-
-#myName_div_header {
-    flex: 1;
-    font-size: 40px;
-    text-align: initial;
-
-}
-
-.links_div_nav_header {
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-    font-size: 24px;
-    padding: 15px 20px;
-    transition: .3s;
-}
-
-.links_div_nav_header a {
-    text-decoration: none;
-    color: black;
-}
-
-.links_div_nav_header a:hover {
-    color: brown;
-    transform: scale(1.3);
-}
-
-/*css section Home*/
-#section_home {
     text-align: center;
+    border-bottom: 2px solid black;
+    height: 70px;
+    margin: 0;
+    padding: 0;
 }
 
-#home_leftColumn {
+.header_leftNav,
+.header_rightNav {
     display: flex;
-    flex-direction: column;
+    margin-left: 30px;
+}
+
+.header_leftNav {
+    justify-content: start;
     align-items: center;
-    justify-content: center;
-    width: 100vw;
+
 }
 
-#home_leftColumn h1 {
-    font-size: 50px;
-    text-align: start;
-}
-
-#home_rightColumn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-}
-
-section img {
-    height: 70%;
-    width: 70%;
-    margin-top: 60px;
-    /*so it can't pass the max width*/
-}
-
-/* background: linear-gradient(to right, #89645d, #7b5945); */
-
-
-/*css section AboutMe*/
-
-#aboutMe {
-    flex-direction: column;
-}
-
-
-#aboutMe_divTopColumn {
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
-}
-
-#aboutMe_divTopColumn h1 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 250px;
-    box-sizing: border-box;
-    font-size: 50px;
-    color: brown;
-    margin-bottom: 20px;
-}
-
-#aboutMe_divTopColumn div {
-    display: flex;
-    background: linear-gradient(to right, #89645d, #7b5945);
-    width: 90%;
-    height: 100%;
-    border: 10px solid rgb(73, 16, 16);
-    justify-content: center;
+.header_rightNav {
+    justify-content: end;
     align-items: center;
 }
 
-#aboutMe_nav {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    align-items: center;
+.header_leftNav a,
+.header_rightNav a {
+    color: black
 }
 
-#aboutMe_nav a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    width: 250px;
-    text-decoration: none;
-    color: brown;
-}
-
-#aboutMe_nav a:hover {
-    color: black;
-    transform: scale(1.3);
-}
-
-#aboutMe_divBottomColumn {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
-}
-
-#aboutMe_divBottomColumn div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, #89645d, #7b5945);
-    border: 10px solid rgb(73, 16, 16);
-    width: 95%;
-    height: 90%;
-}
-
-
-
-
-/*css section projects*/
-
-
-
-
-#projects {
-    flex-direction: column;
-}
-
-
-#projects_divTopColumn {
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
-}
-
-#projects_divTopColumn h1 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 250px;
-    box-sizing: border-box;
-    font-size: 50px;
-    color: brown;
-    margin-bottom: 20px;
-}
-
-#projects_divTopColumn div {
-    display: flex;
-    background: linear-gradient(to right, #89645d, #7b5945);
-    width: 90%;
-    height: 100%;
-    border: 10px solid rgb(73, 16, 16);
-    justify-content: center;
-    align-items: center;
-}
-
-#projects_navIcons {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    align-items: center;
-}
-
-#projects_navIcons img {
-    align-items: center;
-    justify-content: center;
-    width: 110px;
-    color: brown;
+.header_leftNav a {
     margin: 10px;
+    text-decoration: none;
 }
 
-#projects_navIcons img:hover {
-    color: black;
+.header_rightNav a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.header_leftNav a:hover,
+.header_rightNav a:hover {
     transform: scale(1.2);
+    color: rgb(33, 115, 169);
 }
 
-#projects_divBottomColumn {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
-}
 
-#projects_divBottomColumn div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, #89645d, #7b5945);
-    border: 10px solid rgb(73, 16, 16);
-    width: 95%;
-    height: 90%;
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+    body {}
 }
