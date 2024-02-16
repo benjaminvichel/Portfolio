@@ -9,24 +9,35 @@
 </head>
 
 <body>
-    <header>
-        <nav class="header_leftNav">
-            <a href=""><img src="/img/icons8-github-35.png" alt="GitHub"></a>
-            <a href=""><img src="/img/icons8-linkedin-35-removebg-preview.png" alt="Linkedin"></a>
-        </nav>
-        <nav class="header_rightNav">
-            <a href="#home">Home</a>
-            <a href="#aboutMe">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <section id="home">
-
-    </section>
-    <section id="aboutMe">
-
-    </section>
+    <nav>
+        <!--nav vertical-->
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                        viewBox="0 -960 960 960" width="26">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!--nav horizontal-->
+        <ul>
+            <li><a href="#"><img src="/img/icons8-github-35.png" alt="GitHub"></a></li>
+            <li><a href="#"><img src="/img/icons8-linkedin-35-removebg-preview.png" alt="Linkedin"></a></li>
+            <li><a href="#"><img src="/img/icons8-whatsapp-100.png" alt="WhatsApp"><span></span></a></li>
+            <li class="hideOnMobile"><a href="#home">Home</a></li>
+            <li class="hideOnMobile"><a href="#aboutMe">About Me</a></li>
+            <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26" viewBox="0 -960 960 960" width="26">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+    <script type="" src="/js/index.js"></script>
 </body>
 
 </html>
