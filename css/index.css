@@ -1,3 +1,4 @@
+/*Estilo geral*/
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +6,24 @@
 
 body {
     min-height: 100vh;
-    background-image: url(/img/montar-pc-gamer-shutterstock_1430140055.jpg);
+    /*background-image: url(/img/montar-pc-gamer-shutterstock_1430140055.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.flex {
+    display: flex;
+}
+
+h2.titles {
+    color: black;
+    font-size: 38px;
+    text-align: center;
+}
+
+/*nav*/
 nav {
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -25,9 +37,14 @@ nav ul {
     align-items: center;
 }
 
+nav ul.fixed {
+    position: fixed;
+    background-color: aqua;
+    z-index: 11;
+}
+
 nav li {
     height: 50px;
-
 }
 
 nav a {
@@ -75,7 +92,261 @@ nav li:nth-child(3) {
     display: none;
 }
 
+
+/*TOP STYLE PORTFOLIO*/
+
+section.top-portfolio {
+    padding: 40px 4%;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.469);
+}
+
+section.top-portfolio .flex {
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+
+
+.txt-top-portfolio h1 {
+    color: rgb(21, 61, 61);
+    font-size: 42px;
+    line-height: 70px;
+    background-color: red;
+}
+
+.txt-top-portfolio p {
+    color: rgb(21, 61, 61);
+    margin: 40px 0;
+}
+
+
+
+.top-portfolio .img-top-portfolio img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    z-index: 10;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+/*especialidades STYLE*/
+
+section.especialidades {
+    padding: 80px 8%;
+    box-shadow: 0px 0px 40px 10px rgb(0, 0, 0);
+}
+
+section.especialidades .flex {
+    gap: 60px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+
+
+.especialidades .especialidades-box {
+    padding: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgb(13, 246, 246);
+}
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: black;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    color: black;
+    margin: 11px 0;
+}
+
+/*sobre STYLE*/
+
+section.sobre {
+    padding: 100px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: blue;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 30px;
+    background-color: aqua;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+.sobre .txt-sobre .btn-social button:hover {
+    box-shadow: 0px 0px 8px aqua;
+    transform: scale(1.05);
+}
+
+/*Projects Style*/
+
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.469);
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin: 60px;
+}
+
+.portfolio .titles span {
+    color: aqua;
+}
+
+.img-port {
+    width: 320px;
+    height: 460px;
+    background-color: aqua;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.706);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/*form Style*/
+.form .titles {
+    margin-bottom: 20px;
+}
+
+.form .titles span {
+    color: aqua;
+}
+
+section.form {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: rgba(29, 134, 166, 0.215);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: black;
+    font-size: 20px;
+}
+
+form input::placeholder {
+    color: black;
+    font-weight: 400;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form textarea::placeholder {
+    color: black;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: aqua;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px aqua;
+    transform: scale(1.05);
+}
+
 @media(max-width:800px) {
+
+    /*nav Style*/
     .hideOnMobile {
         display: none;
     }
@@ -83,10 +354,72 @@ nav li:nth-child(3) {
     .menu-button {
         display: block;
     }
+
+    /* Style*/
 }
 
 @media(max-width:400px) {
+
+    /*estilos gerais*/
+    .flex {
+        flex-direction: column;
+    }
+
+    /*nav Style*/
     .sidebar {
         width: 100%;
     }
+
+    /*especialidades Style*/
+    .especialidades .especialidades-box {
+        margin: 0 20px;
+    }
+
+    /*portfolio styles*/
+    .top-portfolio .flex {
+        flex-direction: column-reverse;
+    }
+
+    .top-portfolio .img-top-portfolio {
+        scale: 0.9;
+    }
+
+    .txt-top-portfolio h1 {
+        font-size: 34px;
+    }
+
+    .txt-top-portfolio p {
+        color: rgb(21, 61, 61);
+        margin: 40px 0;
+    }
+
+
+
+    /*sobre Style*/
+    .sobre .img-sobre {
+        scale: 0.9;
+    }
+
+    .sobre .txt-sobre span {
+        font-size: 35px;
+    }
+
+    /*portfolio Style*/
+    .portfolio .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex {
+        gap: 30px;
+    }
+
+    /*form Style*/
+    form {
+        width: 250px;
+        max-width: 500px;
+        min-width: 230px;
+    }
+
 }
