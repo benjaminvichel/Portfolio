@@ -21,19 +21,39 @@
                             d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                     </svg></a></li>
             <li><a href="#home">Home</a></li>
+            <li><a href="#tecnologies">Tecnologies</a></li>
             <li><a href="#aboutMe">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li id="darkModeSideBar">
+                <input type="checkbox" class="checkbox" id="chkSideBar">
+                <label class="label" for="chkSideBar">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </li>
         </ul>
         <!--nav horizontal-->
         <ul class="fixed">
-            <li><a href="#"><img src="/img/icons8-github-35.png" alt="GitHub"></a></li>
-            <li><a href="#"><img src="/img/icons8-linkedin-35-removebg-preview.png" alt="Linkedin"></a></li>
+            <li><a href="https://github.com/benjaminvichel" target="_blank"><img src="/img/icons8-github-35.png"
+                        alt="GitHub"></a></li>
+            <li><a href="https://www.linkedin.com/in/benjaminvichel/" target="_blank"><img
+                        src="/img/icons8-linkedin-35-removebg-preview.png" alt="Linkedin"></a></li>
             <li><a href="#"><img src="/img/icons8-whatsapp-100.png" alt="WhatsApp"><span></span></a></li>
             <li class="hideOnMobile"><a href="#home">Home</a></li>
+            <li class="hideOnMobile"><a href="#tecnologies">Tecnologies</a></li>
             <li class="hideOnMobile"><a href="#aboutMe">About Me</a></li>
             <li class="hideOnMobile"><a href="#projects">Projects</a></li>
             <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+            <li class="hideOnMobile" id="darkMode">
+                <input type="checkbox" class="checkbox" id="chk">
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </li>
             <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                         height="26" viewBox="0 -960 960 960" width="26">
                         <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
@@ -41,11 +61,11 @@
         </ul>
     </nav>
     <main>
-        <section class="top-portfolio">
+        <section class="top-portfolio" id="home">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-top-portfolio">
-                        <h1>Benjamin Erich Vichel</h1>
+                        <h1>Full stack developer</h1>
                         <p>ahbsbcas ciaschasbcasibuciabscuiabucibasiubcuisabcisa cibuibasucbauscbasuocb</p>
                     </div>
                     <div class="img-top-portfolio">
@@ -54,29 +74,28 @@
                 </div>
             </div>
         </section>
-        <section class="especialidades">
+        <section class="especialidades" id="tecnologies">
             <div class="interface">
-                <h2 class="titles">Especialidades</h2>
+                <h2 class="titles">Technologies I'm familiar with</h2>
                 <div class="flex">
                     <div class="especialidades-box">
-                        <i class="bi bi-file-code"></i>
-                        <h3>C# project</h3>
-                        <p>calcula valores de diarias</p>
-                    </div>
-                    <div class="especialidades-box">
-                        <i class="bi bi-file-code"></i>
-                        <h3>C# project</h3>
-                        <p>calcula valores de diarias2</p>
-                    </div>
-                    <div class="especialidades-box">
-                        <i class="bi bi-file-code"></i>
-                        <h3>C# project</h3>
-                        <p>calcula valores de diarias3</p>
+                        <a onclick="return false;" href="#"><img src="/img/icons8-css-100.png" alt=""></a>
+                        <a onclick="return false;" href="#"><img src="/img/html 100x100.png" alt=""></a>
+                        <a onclick="return false;" href="#"><img src="/img/js sem fundo.png" alt=""></a>
+                        <a onclick="return false;" href="#"><img src="/img/icons8-c-100.png" alt=""></a>
+                        <a onclick="return false;" href="#"><img src="/img/icon c sharp.png" alt=""></a>
+                        <a onclick="return false;" href="#"><img src="/img/icon c++.png" alt=""></a>
+                        <a onclick="return false;" href="#"><img src="/img/icon java.png" alt=""></a>
+                        <a onclick="return false;" href="#"><img src="/img/icon mySql.png" alt=""></a>
+                        <a onclick="return false;" href="#"><img src="img/icons8-git-100.png" alt=""></a>
+
+
+                        <a href=""><img src="" alt=""></a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="sobre">
+        <section class="sobre" id="aboutMe">
             <div class="inteeface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -95,23 +114,28 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="projects">
             <div class="interface">
                 <h2 class="titles">My <span>Projects</span></h2>
                 <div class="flex">
-                    <div class="img-port" style="background-image: url(/img/Design\ sem\ nome.png);">
-                        <div class="overlay">Projeto 1</div>
+                    <div class="img-port" style="background-image: url(/img/Design\ sem\ nome.png);"
+                        onclick="window.open('https://github.com/benjaminvichel/CSharp-Calculate-Hotel-Daily-Rate', '_blank');">
+                        <div class="overlay">Calculate-Hotel-Daily-Rate
+                        </div>
                     </div>
-                    <div class="img-port" style="background-image: url(/img/Design\ sem\ nome.png);">
-                        <div class="overlay">Projeto 1</div>
+                    <div class="img-port" style="background-image: url('/img/Design\ sem\ nome.png');"
+                        onclick="return false">
+                        <div class="overlay">In Progress</div>
                     </div>
-                    <div class="img-port" style="background-image: url(/img/Design\ sem\ nome.png);">
-                        <div class="overlay">Projeto 1</div>
+
+                    <div class="img-port" style="background-image: url(/img/Design\ sem\ nome.png);"
+                        onclick="return false">
+                        <div class="overlay">In Progress</div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="form">
+        <section class="form" id="contact">
             <div class="interface">
                 <h2 class="titles">Contact <span>me</span></h2>
                 <form action="">
@@ -125,6 +149,7 @@
         </section>
     </main>
     <script type="" src="/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

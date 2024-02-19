@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     /*background-image: url(/img/montar-pc-gamer-shutterstock_1430140055.jpg);*/
@@ -88,10 +92,69 @@ nav li:nth-child(3) {
     width: 100%;
 }
 
+.sidebar #darkModeSideBar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 30px;
+}
+
 .menu-button {
     display: none;
 }
 
+.checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+#darkMode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    background-color: rgb(16, 23, 31);
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 20px;
+    width: 50px;
+}
+
+.label .ball {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 26px;
+    width: 26px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(30px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+    font-size: 20px;
+}
+
+.fa-sun {
+    font-size: 20px;
+    color: #f39c12;
+}
 
 /*TOP STYLE PORTFOLIO*/
 
@@ -106,21 +169,16 @@ section.top-portfolio .flex {
     gap: 90px;
 }
 
-
-
 .txt-top-portfolio h1 {
     color: rgb(21, 61, 61);
-    font-size: 42px;
+    font-size: 50px;
     line-height: 70px;
-    background-color: red;
 }
 
 .txt-top-portfolio p {
     color: rgb(21, 61, 61);
     margin: 40px 0;
 }
-
-
 
 .top-portfolio .img-top-portfolio img {
     position: relative;
@@ -151,17 +209,18 @@ section.especialidades .flex {
     justify-content: center;
 }
 
-
-
 .especialidades .especialidades-box {
-    padding: 40px;
+    padding: 50px;
     border: 2px solid black;
     border-radius: 20px;
-    transition: .2s;
+}
+
+.especialidades .especialidades-box a {
+    scale: 0.9;
+    cursor: auto;
 }
 
 .especialidades .especialidades-box:hover {
-    transform: scale(1.05);
     box-shadow: 0 0 12px rgb(13, 246, 246);
 }
 
@@ -176,7 +235,7 @@ section.especialidades .flex {
     margin: 11px 0;
 }
 
-/*sobre STYLE*/
+/*About Me STYLE*/
 
 section.sobre {
     padding: 100px 4%;
@@ -188,7 +247,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre {
-    color: blue;
+    color: rgb(7, 56, 56);
 }
 
 .sobre .txt-sobre h2 {
@@ -247,6 +306,7 @@ section.portfolio .flex {
     background-position: 100% 0%;
     transition: 8s;
     cursor: pointer;
+    color: white;
     border-radius: 40px;
     position: relative;
 }
@@ -268,10 +328,10 @@ section.portfolio .flex {
     justify-content: center;
     font-size: 24px;
     font-weight: 600;
-    color: #fff;
     opacity: 0;
     transition: .5s;
 }
+
 
 .overlay:hover {
     opacity: 1;
@@ -344,10 +404,42 @@ form .btn-enviar input:hover {
     transform: scale(1.05);
 }
 
+/*dark Mode*/
+/*general styles*/
+body.dark {
+    background-color: rgb(5, 5, 5);
+}
+
+/*About Me styles*/
+
+
+/*portfolio styles*/
+section.portfolio.dark {
+    box-shadow: 0px 0px 40px 10px rgba(222, 217, 217, 0.861);
+}
+
+/*especialidades styles*/
+h2.titles.dark {
+    color: #e0cfcf;
+}
+
+section.especialidades.dark {
+    box-shadow: 0px 0px 40px 10px rgba(222, 217, 217, 0.861);
+}
+
+.especialidades .especialidades-box.dark {
+    border: 2px solid rgb(217, 204, 204);
+    background-color: #a69a9a;
+}
+
+/*End dark Mode*/
+
+
 @media(max-width:800px) {
 
     /*nav Style*/
-    .hideOnMobile {
+    .hideOnMobile,
+    #darkMode {
         display: none;
     }
 
