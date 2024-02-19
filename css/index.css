@@ -411,11 +411,30 @@ body.dark {
 }
 
 /*About Me styles*/
+.sobre .txt-sobre h2.dark {
+    color: #f3dada;
+}
 
+.sobre .txt-sobre h2 span.dark {
+    color: aqua;
+}
+
+.sobre .txt-sobre p {
+    color: #f2f2f2;
+}
 
 /*portfolio styles*/
 section.portfolio.dark {
     box-shadow: 0px 0px 40px 10px rgba(222, 217, 217, 0.861);
+}
+
+
+.top-portfolio .txt-top-portfolio h1.dark {
+    color: #a69a9a;
+}
+
+.top-portfolio .txt-top-portfolio p.dark {
+    color: #e0cfcf;
 }
 
 /*especialidades styles*/
@@ -431,6 +450,12 @@ section.especialidades.dark {
     border: 2px solid rgb(217, 204, 204);
     background-color: #a69a9a;
 }
+
+form input[type="text"].dark,
+form textarea.dark {
+    background-color: #a69a9a;
+}
+
 
 /*End dark Mode*/
 

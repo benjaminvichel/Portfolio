@@ -9,7 +9,7 @@ function hideSidebar() {
 //Start darkMode
 function toggleDarkMode() {
     document.body.classList.toggle('dark');
-    document.querySelectorAll('section.portfolio, section.especialidades, .especialidades .especialidades-box, h2.titles').forEach(section => {
+    document.querySelectorAll('section.portfolio,.top-portfolio .txt-top-portfolio h1,.top-portfolio .txt-top-portfolio p, section.especialidades, .especialidades .especialidades-box,.sobre .txt-sobre h2,.sobre .txt-sobre h2 span,.sobre .txt-sobre p, h2.titles,form input,form textarea').forEach(section => {
         section.classList.toggle('dark');
     });
 }
