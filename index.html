@@ -15,7 +15,7 @@
     <nav>
         <!--nav vertical-->
         <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+            <li onclick=hideSidebar()><a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" height="26"
                         viewBox="0 -960 960 960" width="26">
                         <path
                             d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
@@ -40,7 +40,6 @@
                         alt="GitHub"></a></li>
             <li><a href="https://www.linkedin.com/in/benjaminvichel/" target="_blank"><img
                         src="/img/icons8-linkedin-35-removebg-preview.png" alt="Linkedin"></a></li>
-            <li><a href="#"><img src="/img/icons8-whatsapp-100.png" alt="WhatsApp"><span></span></a></li>
             <li class="hideOnMobile"><a href="#home">Home</a></li>
             <li class="hideOnMobile"><a href="#tecnologies">Tecnologies</a></li>
             <li class="hideOnMobile"><a href="#aboutMe">About Me</a></li>
@@ -54,8 +53,8 @@
                     <div class="ball"></div>
                 </label>
             </li>
-            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                        height="26" viewBox="0 -960 960 960" width="26">
+            <li class="menu-button" onclick=showSidebar()><a href="javascript:void(0)"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
                         <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                     </svg></a></li>
         </ul>
@@ -65,18 +64,18 @@
             <div class="interface">
                 <div class="flex">
                     <div class="txt-top-portfolio">
-                        <h1>Full stack developer</h1>
-                        <p>ahbsbcas ciaschasbcasibuciabscuiabucibasiubcuisabcisa cibuibasucbauscbasuocb</p>
+                        <h1>Hi! <span>I`m Benjamin Vichel</span></h1>
+                        <h2>Full Stack Developer apaixonado por codificação e resolução de problemas.</h2>
                     </div>
                     <div class="img-top-portfolio">
-                        <img src="/img/cube_world_character.jpg" alt="">
+                        <img src="/img/myself.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
         <section class="especialidades" id="tecnologies">
             <div class="interface">
-                <h2 class="titles">Technologies I'm familiar with</h2>
+                <h2 class="titles">Technologies <span>I'm familiar with</span></h2>
                 <div class="flex">
                     <div class="especialidades-box">
                         <a onclick="return false;" href="#"><img src="/img/icons8-css-100.png" alt=""></a>
@@ -88,24 +87,27 @@
                         <a onclick="return false;" href="#"><img src="/img/icon java.png" alt=""></a>
                         <a onclick="return false;" href="#"><img src="/img/icon mySql.png" alt=""></a>
                         <a onclick="return false;" href="#"><img src="img/icons8-git-100.png" alt=""></a>
-
-
-                        <a href=""><img src="" alt=""></a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="sobre" id="aboutMe">
+        <section class="aboutMe" id="aboutMe">
             <div class="inteeface">
                 <div class="flex">
-                    <div class="img-sobre">
-                        <img src="/img/cube_world_character.jpg" alt="">
+                    <div class="img-aboutMe">
+                        <img src="/img/myself.png" alt="">
                     </div>
-                    <div class="txt-sobre">
-                        <h2>Hello!<span>I`m Benjamin Vichel!</span></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus quidem
-                            aspernatur fugiat adipisci, ullam aliquam. Aliquam veniam praesentium eligendi sed commodi
-                            illo consequatur eveniet eius, labore fugiat inventore asperiores?</p>
+                    <div class="txt-aboutMe">
+                        <h2>💻 Computer Science<span> student at Unisinos</span>.</h2>
+                        <p>🎓 I'm currently in my 5th semester. <br><br>
+
+                            📚 I'm currently Learning HTML, Css and JavaScript to become a fullstack developer! <br><br>
+
+                            "I'm deeply passionate about immersing myself in the world of technology,
+                            constantly seeking out new languages and frameworks to master. <br><br>
+                            There's nothing quite like the thrill of diving into a new project, applying my
+                            knowledge, and witnessing my creations come to life."
+                        </p>
                         <!-- <div class="btn-social">
                             <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
                             <a href="#"><button><i class="bi bi-github"></i></button></a>
@@ -120,7 +122,7 @@
                 <div class="flex">
                     <div class="img-port" style="background-image: url(/img/Design\ sem\ nome.png);"
                         onclick="window.open('https://github.com/benjaminvichel/CSharp-Calculate-Hotel-Daily-Rate', '_blank');">
-                        <div class="overlay">Calculate-Hotel-Daily-Rate
+                        <div class="overlay">Calculate Hotel Daily Rate
                         </div>
                     </div>
                     <div class="img-port" style="background-image: url('/img/Design\ sem\ nome.png');"
@@ -138,12 +140,14 @@
         <section class="form" id="contact">
             <div class="interface">
                 <h2 class="titles">Contact <span>me</span></h2>
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Name" required>
-                    <input type="text" name="" id="" placeholder="E-mail" required>
-                    <input type="text" name="" id="" placeholder="cell phone">
-                    <textarea name="" id="" placeholder="message"></textarea>
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="text" name="name" id="" placeholder="Name" required>
+                    <input type="text" name="email" id="" placeholder="E-mail" required>
+                    <input type="text" name="cellphone" id="" placeholder="cell phone">
+                    <textarea name="message" id="" placeholder="message"></textarea>
                     <div class="btn-enviar"><input type="submit" value="Send"></div>
+
+                    <input type="hidden" name="accessKey" value="c0d74f8b-6a9b-4c10-98f7-7f5a646e1da7">
                 </form>
             </div>
         </section>

@@ -10,7 +10,6 @@ html {
 
 body {
     min-height: 100vh;
-    /*background-image: url(/img/montar-pc-gamer-shutterstock_1430140055.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -43,7 +42,7 @@ nav ul {
 
 nav ul.fixed {
     position: fixed;
-    background-color: aqua;
+    background-color: #00D1FF;
     z-index: 11;
 }
 
@@ -64,7 +63,7 @@ nav a:hover {
     background-color: azure;
 }
 
-nav li:nth-child(3) {
+nav li:nth-child(2) {
     margin-right: auto;
 }
 
@@ -170,23 +169,33 @@ section.top-portfolio .flex {
 }
 
 .txt-top-portfolio h1 {
-    color: rgb(21, 61, 61);
+    color: black;
     font-size: 50px;
     line-height: 70px;
 }
 
-.txt-top-portfolio p {
-    color: rgb(21, 61, 61);
+.txt-top-portfolio h1 span {
+    display: block;
+    color: #00D1FF;
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.txt-top-portfolio h2 {
+    color: black;
     margin: 40px 0;
+    font-size: 20px;
 }
 
 .top-portfolio .img-top-portfolio img {
     position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
+    animation: float 2s ease-in-out infinite alternate;
     z-index: 10;
+    border-radius: 50%;
+    scale: 0.9;
 }
 
-@keyframes flutuar {
+@keyframes float {
     0% {
         transform: translateY(0);
     }
@@ -207,6 +216,10 @@ section.especialidades .flex {
     gap: 60px;
     margin-top: 40px;
     justify-content: center;
+}
+
+.especialidades .titles span {
+    color: #00D1FF;
 }
 
 .especialidades .especialidades-box {
@@ -237,48 +250,61 @@ section.especialidades .flex {
 
 /*About Me STYLE*/
 
-section.sobre {
+section.aboutMe {
     padding: 100px 4%;
 }
 
-section.sobre .flex {
+section.aboutMe .flex {
     align-items: center;
     gap: 60px;
 }
 
-.sobre .txt-sobre {
-    color: rgb(7, 56, 56);
+.aboutMe .img-aboutMe img {
+    animation: increase 2s ease-in-out infinite alternate;
+    border-radius: 50%;
 }
 
-.sobre .txt-sobre h2 {
+@keyframes increase {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.aboutMe .txt-aboutMe h2 {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
-.sobre .txt-sobre h2 span {
-    display: block;
+.aboutMe .txt-aboutMe h2 span {
+    color: #00D1FF;
 }
 
-.sobre .txt-sobre p {
+.aboutMe .txt-aboutMe p {
     margin: 20px 0;
     text-align: justify;
+    color: black;
+    font-weight: bold;
 }
 
-.sobre .txt-sobre .btn-social button {
+.aboutMe .txt-aboutMe .btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: 0;
     font-size: 30px;
-    background-color: aqua;
+    background-color: #00D1FF;
     cursor: pointer;
     margin: 0 10px;
     transition: .2s;
 }
 
-.sobre .txt-sobre .btn-social button:hover {
-    box-shadow: 0px 0px 8px aqua;
+.aboutMe .txt-aboutMe .btn-social button:hover {
+    box-shadow: 0px 0px 8px #00D1FF;
     transform: scale(1.05);
 }
 
@@ -295,13 +321,13 @@ section.portfolio .flex {
 }
 
 .portfolio .titles span {
-    color: aqua;
+    color: #00D1FF;
 }
 
 .img-port {
-    width: 320px;
+    width: 340px;
     height: 460px;
-    background-color: aqua;
+    background-color: #00D1FF;
     background-size: cover;
     background-position: 100% 0%;
     transition: 8s;
@@ -313,6 +339,7 @@ section.portfolio .flex {
 
 .img-port:hover {
     background-position: 100% 100%;
+    box-shadow: 0 0 100px rgb(13, 246, 246);
 }
 
 .overlay {
@@ -330,8 +357,8 @@ section.portfolio .flex {
     font-weight: 600;
     opacity: 0;
     transition: .5s;
+    line-height: 1;
 }
-
 
 .overlay:hover {
     opacity: 1;
@@ -343,7 +370,7 @@ section.portfolio .flex {
 }
 
 .form .titles span {
-    color: aqua;
+    color: #00D1FF;
 }
 
 section.form {
@@ -392,7 +419,7 @@ form .btn-enviar {
 
 form .btn-enviar input {
     width: 120px;
-    background-color: aqua;
+    background-color: #00D1FF;
     color: black;
     font-weight: 700;
     cursor: pointer;
@@ -400,7 +427,7 @@ form .btn-enviar input {
 }
 
 form .btn-enviar input:hover {
-    box-shadow: 0px 0px 8px aqua;
+    box-shadow: 0px 0px 8px #00D1FF;
     transform: scale(1.05);
 }
 
@@ -410,16 +437,7 @@ body.dark {
     background-color: rgb(5, 5, 5);
 }
 
-/*About Me styles*/
-.sobre .txt-sobre h2.dark {
-    color: #f3dada;
-}
-
-.sobre .txt-sobre h2 span.dark {
-    color: aqua;
-}
-
-.sobre .txt-sobre p {
+h2.titles.dark {
     color: #f2f2f2;
 }
 
@@ -428,19 +446,15 @@ section.portfolio.dark {
     box-shadow: 0px 0px 40px 10px rgba(222, 217, 217, 0.861);
 }
 
-
 .top-portfolio .txt-top-portfolio h1.dark {
-    color: #a69a9a;
+    color: white;
 }
 
-.top-portfolio .txt-top-portfolio p.dark {
-    color: #e0cfcf;
+.top-portfolio .txt-top-portfolio h2.dark {
+    color: #f2f2f2;
 }
 
 /*especialidades styles*/
-h2.titles.dark {
-    color: #e0cfcf;
-}
 
 section.especialidades.dark {
     box-shadow: 0px 0px 40px 10px rgba(222, 217, 217, 0.861);
@@ -451,14 +465,35 @@ section.especialidades.dark {
     background-color: #a69a9a;
 }
 
+/*About Me styles*/
+.aboutMe .txt-aboutMe h2.dark {
+    color: #f3dada;
+}
+
+.aboutMe .txt-aboutMe h2 span.dark {
+    color: #00D1FF;
+}
+
+.aboutMe .txt-aboutMe p.dark {
+    color: #f2f2f2;
+}
+
+/*contact me*/
 form input[type="text"].dark,
 form textarea.dark {
-    background-color: #a69a9a;
+    background-color: #f2f2f2;
 }
 
 
 /*End dark Mode*/
 
+@media(max-width:1200px) {
+    .img-port {
+        width: 450px;
+        height: 460px;
+        margin: 0 5px;
+    }
+}
 
 @media(max-width:800px) {
 
@@ -489,7 +524,13 @@ form textarea.dark {
 
     /*especialidades Style*/
     .especialidades .especialidades-box {
-        margin: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .especialidades .especialidades-box a {
+        margin: 0 30px;
     }
 
     /*portfolio styles*/
@@ -502,7 +543,16 @@ form textarea.dark {
     }
 
     .txt-top-portfolio h1 {
-        font-size: 34px;
+        font-size: 44px;
+    }
+
+    .txt-top-portfolio h1 span {
+        font-size: 35px;
+    }
+
+    .txt-top-portfolio h2 {
+        margin: 10px 0;
+        font-size: 20px;
     }
 
     .txt-top-portfolio p {
@@ -510,14 +560,16 @@ form textarea.dark {
         margin: 40px 0;
     }
 
-
-
-    /*sobre Style*/
-    .sobre .img-sobre {
+    /*aboutMe Style*/
+    .aboutMe .img-aboutMe {
         scale: 0.9;
     }
 
-    .sobre .txt-sobre span {
+    .aboutMe .txt-aboutMe h2 {
+        font-size: 35px;
+    }
+
+    .aboutMe .txt-aboutMe span {
         font-size: 35px;
     }
 
