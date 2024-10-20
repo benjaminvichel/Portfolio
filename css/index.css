@@ -42,7 +42,8 @@ nav ul {
 
 nav ul.fixed {
     position: fixed;
-    background-color: #00D1FF;
+    /*background-color: #00D1FF;*/
+    background-color: #F5F5DC;
     z-index: 11;
 }
 
@@ -176,7 +177,8 @@ section.top-portfolio .flex {
 
 .txt-top-portfolio h1 span {
     display: block;
-    color: #00D1FF;
+    /* color: #00D1FF;*/
+    color: #D2691E;
     font-size: 50px;
     line-height: 40px;
 }
@@ -219,7 +221,7 @@ section.especialidades .flex {
 }
 
 .especialidades .titles span {
-    color: #00D1FF;
+    color: #D2691E;
 }
 
 .especialidades .especialidades-box {
@@ -234,7 +236,7 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box:hover {
-    box-shadow: 0 0 12px rgb(13, 246, 246);
+    box-shadow: 0 0 12px #D2691E;
 }
 
 .especialidades .especialidades-box i {
@@ -281,7 +283,7 @@ section.aboutMe .flex {
 }
 
 .aboutMe .txt-aboutMe h2 span {
-    color: #00D1FF;
+    color: #D2691E;
 }
 
 .aboutMe .txt-aboutMe p {
@@ -321,7 +323,7 @@ section.portfolio .flex {
 }
 
 .portfolio .titles span {
-    color: #00D1FF;
+    color: #D2691E;
 }
 
 .img-port {
@@ -370,7 +372,7 @@ section.portfolio .flex {
 }
 
 .form .titles span {
-    color: #00D1FF;
+    color: #D2691E;
 }
 
 section.form {
@@ -391,7 +393,7 @@ form {
 form input,
 form textarea {
     width: 100%;
-    background-color: rgba(29, 134, 166, 0.215);
+    background-color: #F5F5DC;
     border: 0;
     outline: 0;
     padding: 20px 15px;
@@ -421,7 +423,7 @@ form .btn-enviar {
 
 form .btn-enviar input {
     width: 120px;
-    background-color: #00D1FF;
+    background-color: #D2691E;
     color: black;
     font-weight: 700;
     cursor: pointer;
@@ -429,7 +431,7 @@ form .btn-enviar input {
 }
 
 form .btn-enviar input:hover {
-    box-shadow: 0px 0px 8px #00D1FF;
+    box-shadow: 0px 0px 8px #D2691E;
     transform: scale(1.05);
 }
 
@@ -473,7 +475,7 @@ section.especialidades.dark {
 }
 
 .aboutMe .txt-aboutMe h2 span.dark {
-    color: #00D1FF;
+    color: #D2691E;
 }
 
 .aboutMe .txt-aboutMe p.dark {
